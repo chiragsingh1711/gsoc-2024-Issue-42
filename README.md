@@ -13,6 +13,7 @@ Subject: GSoC 2024 Proposal
 - **Timezone**: GMT+5:30 IST (Indian Standard Time)
 - **Link to resume**: [resume](https://drive.google.com/file/d/12S8VXR0l8jFNrXq6RddP21tzJ10rB4Qi/view?usp=sharing)
 - **Have I ever contributed in open source before?**: Yes, I was selected for XROS in 2023. An Open-Source contribution program which was organized by Meta
+- **Brief Background Info**: I am proficient in Blender 3D modelling, animation and scripting. I am also a Three JS and XR Developer. I have many project experiences involving all of the above fields.
 
 # Project Overview
 
@@ -37,7 +38,7 @@ The project will yield a set of scripts capable of automatically generating anim
 
 <!-- Make it bold -->
 
-## **A script to append nodes to already existing materials within Shader Nodes to finally produce appear, disappear, change locations animations, or stagger their appearances:**
+## 1. **A script to append nodes to already existing materials within Shader Nodes to finally produce appear, disappear, change locations animations, or stagger their appearances:**
 
 ### Objectives:
 
