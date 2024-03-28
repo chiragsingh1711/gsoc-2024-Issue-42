@@ -1,7 +1,7 @@
 ---
-author: Chirag Singh
-title: "BRL-CAD: Scripts for generating simple animations (e.g. appear / disappear, bounce, appear left to right, fade in from above, etc)"
-subject: GSoC 2023 Proposal
+Author: Chirag Singh
+Title: "BRL-CAD: Scripts for generating simple animations (e.g. appear / disappear, bounce, appear left to right, fade in from above, etc)"
+Subject: GSoC 2024 Proposal
 ---
 
 # Contact Information
@@ -33,4 +33,33 @@ The project will yield a set of scripts capable of automatically generating anim
 1. [Skyscraper Construction Animation](https://www.youtube.com/watch?v=ckFIeWsbTsg)
 2. [4d construction schedule animation](https://www.youtube.com/watch?v=k2lfuiYmT0w)
 
-# Existing Infrastructure
+# Project Breakdown
+
+<!-- Make it bold -->
+
+1. **A script to append nodes to already existing materials within Shader Nodes to finally produce appear, disappear, change locations animations, or stagger their appearances:**
+
+## Objectives:
+
+- Append Nodes from script to the Shader Editor of any material.
+- Keyframe the Mapping node to generate the animation.
+- Revert back to the previous material properties once the animation is deleted.
+- Bring all this in form of Buttons using Blender’s GUI Scripting.
+
+## Approach:
+
+- Using Blender’s Shader Editor, we’ll connect Principal BSDF and Transparent BSDF node with Mix Shader Node and keyframing the Factor Value of Mix Shader node, we’ll be able to animate the visibility of the object. (Blend mode of the material should be turned to Alpha Blend)[Sample Video](https://youtu.be/_1QOq643i70?si=ypHa57HQMbrjKCiL)
+
+![Blender Shader Image](blender-shader-editor.png)
+
+- Keyframing the X value of Mapping Node to create a transition of appear and disappear staggered animation.
+
+![Blender Timeline Image](timeline-bar.png)
+
+- Creating two buttons for Creating and removing the Shader nodes and animation.
+
+![Blender GUI Image](blender-gui-buttons.png)
+
+- Later we can interpolate multiple types of animations like – Linear, Sinusoidal, Quadratic, Exponential
+
+![Blender Types of Animations Image](types-of-animations.png)
