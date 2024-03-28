@@ -37,16 +37,16 @@ The project will yield a set of scripts capable of automatically generating anim
 
 <!-- Make it bold -->
 
-1. **A script to append nodes to already existing materials within Shader Nodes to finally produce appear, disappear, change locations animations, or stagger their appearances:**
+## **A script to append nodes to already existing materials within Shader Nodes to finally produce appear, disappear, change locations animations, or stagger their appearances:**
 
-## Objectives:
+### Objectives:
 
 - Append Nodes from script to the Shader Editor of any material.
 - Keyframe the Mapping node to generate the animation.
 - Revert back to the previous material properties once the animation is deleted.
 - Bring all this in form of Buttons using Blender’s GUI Scripting.
 
-## Approach:
+### Approach:
 
 - Using Blender’s Shader Editor, we’ll connect Principal BSDF and Transparent BSDF node with Mix Shader Node and keyframing the Factor Value of Mix Shader node, we’ll be able to animate the visibility of the object. (Blend mode of the material should be turned to Alpha Blend).
   [Sample Video](https://youtu.be/_1QOq643i70?si=ypHa57HQMbrjKCiL)
@@ -65,18 +65,20 @@ The project will yield a set of scripts capable of automatically generating anim
 
 ![Blender Types of Animations Image](images/types-of-animations.png)
 
-2. **Animating the objects based on the Work Breakdown Structure**
+### Code for the above Objectives: [Code.py](https://github.com/chiragsingh1711/gsoc-2024-Issue-42/AnimationPlusGUI.py)
 
-## Approach:
+## 2. **Animating the objects based on the Work Breakdown Structure**
+
+### Approach:
 
 - A script already exists in the Blender BIM Addon that calculates which model has to be animated first.
 - We just have to interpolate with the existing code and add multiple animation options.
 
 ![Work Breakdown Structure Image](images/work-breakdown-structure-sample.png)
 
-3. **Timeline bar as an overlay on 3D Viewport and Rendered Animation**
+## 3. **Timeline bar as an overlay on 3D Viewport and Rendered Animation**
 
-## Approach:
+### Approach:
 
 - A script that interprets project timeline data and dynamically overlay on top of the 3D viewport. This can be achieved by implementing the timeline bar just where the Blender Kit’s addon is placed. It will be the perfect position for the user to interpolate it.
 
