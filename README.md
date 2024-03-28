@@ -65,7 +65,13 @@ The project will yield a set of scripts capable of automatically generating anim
 
 ![Blender Types of Animations Image](images/types-of-animations.png)
 
-### Code for the above Objectives: [Code.py](https://github.com/chiragsingh1711/gsoc-2024-Issue-42/AnimationPlusGUI.py)
+### Code for the above Objectives: [AnimationPlusGUI.py](https://github.com/chiragsingh1711/gsoc-2024-Issue-42/AnimationPlusGUI.py)
+
+
+
+https://github.com/chiragsingh1711/gsoc-2024-Issue-42/assets/62589134/cc1f542f-fea4-4c36-b815-a90a3800b282
+
+
 
 ## 2. **Animating the objects based on the Work Breakdown Structure**
 
@@ -94,7 +100,7 @@ The project will yield a set of scripts capable of automatically generating anim
 
 - A script to dynamically add 3D Text Box in the viewport and make camera as the parent of the Text.
 
-![Text Box Outcome Image](images/tex-box-outcome.png)
+![Text Box Outcome Image](images/text-box-outcome.png)
 
 # Development Schedule
 
